@@ -1,0 +1,27 @@
+{
+    "name": "@azleur/valtree",
+    "version": "0.0.0",
+    "author": "azleur",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Azleur/valtree.git"
+    },
+    "homepage": "https://github.com/Azleur/valtree",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "jest",
+        "build": "rm -rf dist && tsc && uglifyjs dist/*.js --compress --output dist/*.js"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.23",
+        "jest": "^24.9.0",
+        "ts-jest": "^24.1.0",
+        "typescript": "^3.7.2",
+        "uglify-js": "^3.6.9"
+    }
+}
